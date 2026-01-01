@@ -3,9 +3,11 @@ import '../util/emoticons.dart';
 import '../util/excerciselist.dart';
 import 'Notification_page.dart';
 import 'Profile.dart';
+import 'package:intl/intl.dart';
 
 class Homepage extends StatefulWidget {
-  const Homepage({super.key});
+  final String today = DateFormat('dd-MMM-yyyy').format(DateTime.now());
+  Homepage({super.key});
 
   @override
   State<Homepage> createState() => _HomepageState();
@@ -40,8 +42,11 @@ class _HomepageState extends State<Homepage> {
                           ),
                           SizedBox(height: 6),
                           Text(
-                            '01 Jan, 2026',
-                            style: TextStyle(color: Colors.blue[200]),
+                            widget.today,
+                            style: TextStyle(
+                              color: Colors.blue[200],
+                              fontSize: 16,
+                            ),
                           ),
                         ],
                       ),
