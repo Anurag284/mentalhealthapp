@@ -120,70 +120,76 @@ class _HomepageState extends State<Homepage> {
                   ),
                   SizedBox(height: 20),
                   //Mood Section
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(
-                        children: [
-                          //bad
-                          Emoticons(emoticon: '😔'),
-                          SizedBox(height: 5),
-                          Text(
-                            'Badly',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w900,
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          children: [
+                            //bad
+                            Emoticons(emoticon: '😔'),
+                            SizedBox(height: 5),
+                            Text(
+                              'Badly',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w900,
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          //Fine
-                          Emoticons(emoticon: '😐'),
-                          SizedBox(height: 5),
-                          Text(
-                            'Fine',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w900,
+                          ],
+                        ),
+                        SizedBox(width: 15),
+                        Column(
+                          children: [
+                            //Fine
+                            Emoticons(emoticon: '😐'),
+                            SizedBox(height: 5),
+                            Text(
+                              'Fine',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w900,
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          //Well
-                          Emoticons(emoticon: '😊'),
-                          SizedBox(height: 5),
-                          Text(
-                            'Well',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w900,
+                          ],
+                        ),
+                        SizedBox(width: 15),
+                        Column(
+                          children: [
+                            //Well
+                            Emoticons(emoticon: '😊'),
+                            SizedBox(height: 5),
+                            Text(
+                              'Well',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w900,
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          //excellent
-                          Emoticons(emoticon: '😄'),
-                          SizedBox(height: 5),
-                          Text(
-                            'Excellent',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w900,
+                          ],
+                        ),
+                        SizedBox(width: 15),
+                        Column(
+                          children: [
+                            //excellent
+                            Emoticons(emoticon: '😄'),
+                            SizedBox(height: 5),
+                            Text(
+                              'Excellent',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w900,
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                    ],
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
