@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Homepage.dart';
+import 'package:mentalhealthapp/Pages/Mainbottomnav.dart';
 
 class Loginpage extends StatefulWidget {
   const Loginpage({super.key});
@@ -36,7 +36,7 @@ class _LoginpageState extends State<Loginpage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: isLoggedIn ? Homepage() : _loginUI());
+    return Scaffold(body: isLoggedIn ? MainbottomNav() : _loginUI());
   }
 
   // 🔑 LOGIN UI
