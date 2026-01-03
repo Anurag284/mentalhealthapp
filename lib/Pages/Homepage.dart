@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../util/emoticons.dart';
 import '../util/excerciselist.dart';
 import 'Notification_page.dart';
-import 'Profile.dart';
 import 'package:intl/intl.dart';
 
 class Homepage extends StatefulWidget {
